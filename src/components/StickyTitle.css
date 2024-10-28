@@ -1,0 +1,17 @@
+.sticky-title {
+    position: fixed; /* Keep it fixed in position */
+    top: 60px; /* Adjust this value to be just below the navbar */
+    left: 20px; /* Adjust as needed */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border: 1px solid #ccc; /* Optional border */
+    padding: 5px 10px; /* Smaller padding */
+    border-radius: 5px; /* Optional rounded corners */
+    z-index: 1000; /* Keep it on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  .sticky-title h2 {
+    font-size: 14px; /* Smaller font size */
+    margin: 0; /* Remove default margin */
+  }
+  

@@ -1,0 +1,618 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.AboutMe{
+  margin-top:-300px;
+  margin-left:400px;
+  margin-bottom: 600px;
+  font-weight: bold;
+}
+
+.profile-photo{
+  margin-top: 100px;
+  display: flex;
+  margin-left: 450px;
+  width: 700px;
+  height:500px;
+  border-radius: 60%;
+}
+
+#root, body, .App{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width:149%;;
+}
+
+.AboutMeP{
+  margin-top:-550px;
+  margin-left:400px;
+  margin-bottom: 600px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#projects {
+  margin: 2em 0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between the project items */
+  gap: 20px; /* Adds space between each project */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.project-details {
+  flex: 1; /* Each project will take up equal space */
+  min-width: 250px; /* Minimum width to avoid shrinking too much on smaller screens */
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+  border-radius: 5px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.project-details h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.project-details p {
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+.project-image {
+  width: 100%; /* Makes sure the images scale to the full width of their container */
+  max-width: 300px; /* Optional: Set a max width for the images */
+  height: auto; /* Keeps image aspect ratio intact */
+  margin-top: 1em;
+}
+
+#experience {
+  margin: 2em 0;
+  text-align: center; /* Center the text for a more modern feel */
+}
+
+.experience-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  max-width: 500px; /* Restrict width for better readability */
+}
+
+.experience-content p::before {
+  content: "👀 "; /* Add an eye emoji before the text */
+}
+
+.experience-content p::after {
+  content: " 💼"; /* Add a briefcase emoji after the text */
+}
+
+
+#resume {
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 200px; /* Keep the top margin */
+  text-align: center; /* Center the text within the section */
+}
+
+#resumepdf {
+  width: 500px; /* Fixed width for the PDF image */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensures margin auto works correctly */
+}
+
+.AboutMeL{
+  margin-top:-550px;
+  margin-left:400px;
+  font-size: 14px;
+}
+
+.bioparagraph {
+  font-size: 1.2em;
+  margin: 1em;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+#bio {
+  max-width: 100%;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+#volunteer-experience {
+  margin: 2em 0;
+}
+
+.volunteer-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between the items */
+  gap: 20px; /* Adds space between each volunteer experience */
+  flex-wrap: wrap; /* Allows wrapping to the next line if the screen is too narrow */
+}
+
+.volunteer-details {
+  flex: 1; /* Each volunteer detail will take up equal space */
+  min-width: 250px; /* Ensure a minimum width to prevent squishing on small screens */
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd; /* Optional: Add a border for better visual separation */
+  border-radius: 5px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.volunteer-details h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.volunteer-details p {
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+#education {
+  margin: 2em 0;
+  text-align: center; /* Center the heading for a modern look */
+}
+
+.education-details {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.5em; /* Increased padding for a more spacious feel */
+  border-radius: 10px; /* Rounded corners for a modern card style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center the card */
+}
+
+.education-details h3 {
+  font-size: 1.5em; /* Larger font for the university name */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 0.5em; /* Space below the heading */
+}
+
+.education-details p {
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  line-height: 1.6; /* Increased line height for spacing */
+  color: #555; /* Soft text color */
+  margin: 0.5em 0; /* Margins for spacing */
+}
+
+.education-details ul {
+  list-style-type: none; /* Remove default list styles */
+  padding-left: 0; /* Remove padding */
+}
+
+.education-details ul li {
+  background-color: #e9ecef; /* Light background for list items */
+  padding: 0.5em; /* Padding for list items */
+  margin: 0.5em 0; /* Margin for spacing between items */
+  border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Common card styles for Volunteer Experience and Projects */
+.volunteer-details,
+.project-details {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.5em; /* Increased padding for a spacious feel */
+  border-radius: 10px; /* Rounded corners for a modern card style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1; /* Each item will take up equal space in the flex container */
+  min-width: 250px; /* Minimum width to avoid shrinking too much on smaller screens */
+  margin: 1em; /* Margin for spacing */
+}
+
+.volunteer-container,
+.project-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between items */
+  gap: 20px; /* Adds space between items */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.loading-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.loading-bar {
+  height: 10px;
+  background-color: #76c7c0;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+#contact {
+  margin-top: -10px;
+  text-align: center;
+}
+
+#contact a {
+  color: #4caf50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 150px; /* Adjust this value to add the desired space at the top */
+}
+
+h1 {
+  margin-top:200px;
+}
+
+#education #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.AboutMe{
+  margin-top:-300px;
+  margin-left:400px;
+  margin-bottom: 600px;
+  font-weight: bold;
+}
+
+.profile-photo{
+  margin-top: 100px;
+  display: flex;
+  margin-left: 450px;
+  width: 700px;
+  height:500px;
+  border-radius: 60%;
+}
+
+#root, body, .App{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width:149%;;
+}
+
+.AboutMeP{
+  margin-top:-550px;
+  margin-left:400px;
+  margin-bottom: 600px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#projects {
+  margin: 2em 0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between the project items */
+  gap: 20px; /* Adds space between each project */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.project-details {
+  flex: 1; /* Each project will take up equal space */
+  min-width: 250px; /* Minimum width to avoid shrinking too much on smaller screens */
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+  border-radius: 5px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.project-details h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.project-details p {
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+.project-image {
+  width: 100%; /* Makes sure the images scale to the full width of their container */
+  max-width: 300px; /* Optional: Set a max width for the images */
+  height: auto; /* Keeps image aspect ratio intact */
+  margin-top: 1em;
+}
+
+#experience {
+  margin: 2em 0;
+  text-align: center; /* Center the text for a more modern feel */
+}
+
+.experience-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  max-width: 500px; /* Restrict width for better readability */
+}
+
+.experience-content p::before {
+  content: "👀 "; /* Add an eye emoji before the text */
+}
+
+.experience-content p::after {
+  content: " 💼"; /* Add a briefcase emoji after the text */
+}
+
+
+#resume {
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 200px; /* Keep the top margin */
+  text-align: center; /* Center the text within the section */
+}
+
+#resumepdf {
+  width: 500px; /* Fixed width for the PDF image */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensures margin auto works correctly */
+}
+
+.AboutMeL{
+  margin-top:-550px;
+  margin-left:400px;
+  font-size: 14px;
+}
+
+.bioparagraph {
+  font-size: 1.2em;
+  margin: 1em;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+#bio {
+  max-width: 100%;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+#volunteer-experience {
+  margin: 2em 0;
+}
+
+.volunteer-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between the items */
+  gap: 20px; /* Adds space between each volunteer experience */
+  flex-wrap: wrap; /* Allows wrapping to the next line if the screen is too narrow */
+}
+
+.volunteer-details {
+  flex: 1; /* Each volunteer detail will take up equal space */
+  min-width: 250px; /* Ensure a minimum width to prevent squishing on small screens */
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd; /* Optional: Add a border for better visual separation */
+  border-radius: 5px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.volunteer-details h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.volunteer-details p {
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+#education {
+  margin: 2em 0;
+  text-align: center; /* Center the heading for a modern look */
+}
+
+.education-details {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.5em; /* Increased padding for a more spacious feel */
+  border-radius: 10px; /* Rounded corners for a modern card style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center the card */
+}
+
+.education-details h3 {
+  font-size: 1.5em; /* Larger font for the university name */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 0.5em; /* Space below the heading */
+}
+
+.education-details p {
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  line-height: 1.6; /* Increased line height for spacing */
+  color: #555; /* Soft text color */
+  margin: 0.5em 0; /* Margins for spacing */
+}
+
+.education-details ul {
+  list-style-type: none; /* Remove default list styles */
+  padding-left: 0; /* Remove padding */
+}
+
+.education-details ul li {
+  background-color: #e9ecef; /* Light background for list items */
+  padding: 0.5em; /* Padding for list items */
+  margin: 0.5em 0; /* Margin for spacing between items */
+  border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Common card styles for Volunteer Experience and Projects */
+.volunteer-details,
+.project-details {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.5em; /* Increased padding for a spacious feel */
+  border-radius: 10px; /* Rounded corners for a modern card style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1; /* Each item will take up equal space in the flex container */
+  min-width: 250px; /* Minimum width to avoid shrinking too much on smaller screens */
+  margin: 1em; /* Margin for spacing */
+}
+
+.volunteer-container,
+.project-container {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between items */
+  gap: 20px; /* Adds space between items */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.loading-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.loading-bar {
+  height: 10px;
+  background-color: #76c7c0;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+#contact {
+  margin-top: -10px;
+  text-align: center;
+}
+
+#contact a {
+  color: #4caf50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 150px; /* Adjust this value to add the desired space at the top */
+}
+
+h1 {
+  margin-top:200px;
+}
+
+a {
+  text-decoration: underline; /* Add underline to all links */
+  color: blue; /* Set the color to blue (or any color you prefer) */
+}
+
+a:hover {
+  color: darkblue; /* Change color on hover for better user experience */
+}
+
+
+
+#education a, .project-details a, .AboutMeL a{
+  text-decoration: underline; /* Add underline to all links */
+  color: blue; /* Set the color to blue (or any color you prefer) */
+}
+
+a:hover {
+  color: darkblue; /* Change color on hover for better user experience */
+}
+
+
+

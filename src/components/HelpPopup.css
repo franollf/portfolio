@@ -1,0 +1,46 @@
+.help-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Ensure the overlay is above other content */
+}
+
+.help-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%; /* Adjusted for responsiveness */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.help-popup h2 {
+  margin-bottom: 10px;
+}
+
+.help-popup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.help-popup button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.help-popup button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
